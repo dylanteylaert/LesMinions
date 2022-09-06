@@ -6,21 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/styles/style.css">
 </head>
 <body>
     <header>
-        <div class="jumbotron">
-            <a type="button" class="btn btn-dark btn-outline-light" href="index.php">Accueil</a>
-            <a type="button" class="btn btn-light" href="index.php?action=anim">Animé et dessin animé</a>
-            <a type="button" class="btn btn-light" href="index.php?action=auteur">Auteur</a>
-            <a type="button" class="btn btn-warning" href="index.php?action=addanim">Ajouter un animé et dessin animé</a>
-            <a type="button" class="btn btn-warning" href="index.php?action=addauteur">Ajouter un auteur</a>
-            <a type="button" class="btn btn-warning" href="index.php?action=addauteur">Déconnexion</a>
-            <hr class="my-4">
-            <form class="form-inline my-2 my-lg-0" action="index.php?search">
-                <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a type="button" class="cou btn " href="index.php">Accueil</a>
+                </li>
+                <li class="nav-item active">
+                    <a type="button" class="cou btn " href="index.php?action=anim">Animé et dessin animé</a>
+                </li>
+                <li class="nav-item">
+                    <a type="button" class="cou btn" href="index.php?action=auteur">Auteur</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a type="button" class="cou btn " href="index.php?action=addanim">Ajouter un animé et dessin animé</a>
+                </li>
+                <li class="nav-item">
+                    <a type="button" class="cou btn " href="index.php?action=addauteur">Ajouter un auteur</a>
+                </li>
+                </ul>
+                <a type="button" class="deco btn btn-dark btn-outline-light" href="index.php?action=addauteur">Déconnexion</a>
+                </form>
+            </div>
+        </nav>
+        <div>
+            <form class="form-inline-block  my-5 my-lg-0 container-fluid"  action="index.php?search">
+                <input class="nav  form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
+                
             </form>
+            </div>
         </div>
     </header>
 

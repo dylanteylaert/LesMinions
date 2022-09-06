@@ -1,0 +1,26 @@
+header{
+   background-color: #2e4057;
+   
+    padding: 5px 0;
+}
+nav a{
+    margin-top: 5px;
+    margin-left: 15px;
+    
+}
+nav form{
+    display:flex;
+    justify-content: center;
+    
+}
+.nav{
+
+    height: 50px;
+}
+.deco{
+
+}
+.cou{
+    background-color: #f37748;
+    color: #f3efe0;
+}
